@@ -1,0 +1,42 @@
+[
+    {
+        "ID": "1",
+        "Name": "Ric",
+        "Role": "Software Engineer",
+        "Email": "ric@example.com",
+        "Phone": 5550100,
+        "Contacted": true
+    },
+    {
+        "ID": "2",
+        "Name": "John Doe",
+        "Role": "Frontend Developer",
+        "Email": "john.doe@example.com",
+        "Phone": 5550201,
+        "Contacted": true
+    },
+    {
+        "ID": "3",
+        "Name": "Jane Smith",
+        "Role": "Backend Developer",
+        "Email": "jane.smith@example.com",
+        "Phone": 5550302,
+        "Contacted": false
+    },
+    {
+        "ID": "4",
+        "Name": "Alice Johnson",
+        "Role": "Data Scientist",
+        "Email": "alice.johnson@example.com",
+        "Phone": 5550403,
+        "Contacted": true
+    },
+    {
+        "ID": "5",
+        "Name": "Bob Lee",
+        "Role": "QA Engineer",
+        "Email": "bob.lee@example.com",
+        "Phone": 5550504,
+        "Contacted": false
+    }
+]
