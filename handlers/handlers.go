@@ -49,11 +49,18 @@ func CreateCustomer(customers *map[int]models.Customer) http.HandlerFunc {
 		w.Header().Set("Content-Type", "application/json")
 
 		reqBody, err := io.ReadAll(r.Body)
+
 		if err != nil {
 			http.Error(w, "Error reading body request", http.StatusBadRequest)
 			return
 		}
 		json.Unmarshal(reqBody, &newCustomer)
+
+		if newCustomer.ID == "" {
+			id := len(*customers)
+			id++
+			newCustomer.ID = strconv.Itoa(id)
+		}
 
 		id, _ := strconv.Atoi(newCustomer.ID)
 
