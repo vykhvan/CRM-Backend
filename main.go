@@ -45,7 +45,7 @@ func main() {
 	router.HandleFunc("/", handlers.Index).Methods("GET")
 	router.HandleFunc("/customers", handlers.GetAllCustomers(customers)).Methods("GET")
 	router.HandleFunc("/customers/{id}", handlers.GetCustomerByID(customers)).Methods("GET")
-	router.HandleFunc("/customers", handlers.CreateCustomerByID(&customers)).Methods("POST")
+	router.HandleFunc("/customers", handlers.CreateCustomer(&customers)).Methods("POST")
 	router.HandleFunc("/customers/{id}", handlers.UpdateCustomerByID(&customers)).Methods("PUT")
 	router.HandleFunc("/customers/{id}", handlers.DeleteCustomerByID(&customers)).Methods("DELETE")
 

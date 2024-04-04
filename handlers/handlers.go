@@ -42,7 +42,7 @@ func GetCustomerByID(customers map[int]models.Customer) http.HandlerFunc {
 	}
 }
 
-func CreateCustomerByID(customers *map[int]models.Customer) http.HandlerFunc {
+func CreateCustomer(customers *map[int]models.Customer) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		var newCustomer models.Customer
 
